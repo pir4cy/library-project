@@ -1,0 +1,24 @@
+.mainWrapper{
+    text-align: center;
+}
+
+.extraDiv {
+    border: 1px solid black;
+    float: left;
+    width: 20%;
+}
+
+.mainGrid{
+    border: 1px solid #855E42;
+    float: right;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+}
+
+.grid-item {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    border: 10px solid #855E42;
+}

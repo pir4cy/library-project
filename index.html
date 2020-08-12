@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <title>Library</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class = "mainWrapper">
+        <div class = "extraDiv">
+            <h2>Welcome to the Library.</h2><br>
+            <p>To add a new movie, enter the details below</p>
+            <form id = "newMovie">
+                <div class = "form-group">
+                    <label for = "movieTitle">Movie Name:</label>
+                    <input type = "text" class = "form-control" name = "movieTitle">
+                </div >
+                <div class = "form-group">
+                    <label for = "movieAuth">Director:</label>
+                    <input type = "text" class = "form-control" name = "movieAuth">
+                </div>
+                <div class = "form-group">
+                    <label for = "ratingsMovie">Ratings:</label>
+                    <input type = "text" pattern="[0-5].[0-5]" class = "form-control" name = "ratingsMovie">
+                </div>
+                <div class = "form-group form-check">
+                    <input type = "checkbox" class = "form-check-input" name = "movieWatched">
+                    <label for = "movieWatched" class="form-check-label">Watched</label>
+                </div>
+                <button type="submit" class="btn btn-primary" id = "submit">Submit</button>
+            </form>
+        </div>
+        <div class = "mainGrid" id = "library">
+        </div>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.17.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/7.17.2/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+</body>
+<script src="script.js"></script> 
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
